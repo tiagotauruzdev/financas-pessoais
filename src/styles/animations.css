@@ -1,0 +1,52 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delay-100 {
+  animation: fade-in 0.5s ease-out forwards;
+  animation-delay: 100ms;
+}
+
+.animate-fade-in-delay-200 {
+  animation: fade-in 0.5s ease-out forwards;
+  animation-delay: 200ms;
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  animation: draw-line 1.5s ease-out forwards;
+}
